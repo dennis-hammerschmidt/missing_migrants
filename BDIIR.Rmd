@@ -100,7 +100,7 @@ packages <-
     "withr",
     "transformr",
     "devtools",
-    "magrittr",
+    #"magrittr",
     "reticulate",
     "knitr",
     "rmarkdown"
@@ -456,17 +456,15 @@ The results mirror the consequences of the EU-Turkey agreement. After the implem
  As AIS data example, combining missing migrants project data with other external big data is expected to broaden the migration research’s possibilities. In this regard, this report suggests combining the weather data with the missing migrants project’s data firstly, to improve the systematic analysis of fatality in migration journey and secondly, build safety guidelines for the migrants.
  To begin with, even though the causes of deaths and missings are specified in the data, precise factors lead to the dangerousness is not described in the data and only months are presumed to affect the safety of journey. Since the deaths and missings mainly take place during the journey through the ocean, which is heavily affected by the ocean currents and weather, weather data might provide further explanation for the factors lead to a dangerous journey. Also, this report has revealed that summer months has significantly different results. On top of that, if the weather is found to be the main determinant of successful arrival, safety guideline for migrants and the administrations could be built by exploring the weather and the location. To be specific, it could inform migrants who intend to take a specific migration route at specific weather, specific season and location the dangerousness level of the journey based on previous data. Also, based on the weather and the routes, the administrations could reinforce its rescue-ship infrastructure.  However, due to a budget issue, this report couldn’t implement weather data into the analysis. Future improvement by researchers is expected. 
  
- 
- ## Appendix 
+\newpage
 
-```{r, fig.cap="OLS Output"}
+## Appendix
+
+You can find the replication materials [here](https://github.com/dennis-hammerschmidt/missing_migrants)
+
+```{r, out.width = "300px", fig.cap="OLS Output"}
 # This result was created in the accompanying python jupyter notebook
 knitr::include_graphics('images/ANOVA_Test_results.png')
-```
-
-```{r, fig.cap="Overall ANOVA Result"}
-# This result was created in the accompanying python jupyter notebook
-knitr::include_graphics('images/Anova_Overall.png')
 ```
 
 ```{r, fig.cap="Tuckey test results I"}
@@ -477,6 +475,11 @@ knitr::include_graphics('images/Post-AD-HOC-testing1.png')
 ```{r, fig.cap="Tuckey test results I"}
 # This result was created in the accompanying python jupyter notebook
 knitr::include_graphics('images/Post-AD-HOC-testing2.png')
+```
+
+```{r, fig.cap="Overall ANOVA Result"}
+# This result was created in the accompanying python jupyter notebook
+knitr::include_graphics('images/Anova_Overall.png')
 ```
 
 ```{r, fig.cap="T-Test descriptive"}
